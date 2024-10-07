@@ -1,92 +1,15 @@
 ![image alt](https://github.com/jay37749/CryptoMagic-BruteForce-Ethereum-PrivateKey-Finder-Mnemonic-Cracker/blob/61db055447e5b4e76c61d974d89099b9ac0ca88a/CRYPTOCURRENCY-MAGIC-BRUTEFORCE-ETHEREUM-FINDER%20(732%20x%20279%20px).png)
 
-#CRYPTO MAGIC#
+#CRYPTO SEARCHER#
 
-Hunt and Crack Private Keys (Bytes & Hex) with Mnemonic
+Hunt and Crack Private Keys (Bytes & Hex) with CryptoSearcher
 ________________________________________
 *Introduction*
 
-Clone this project repository: https://github.com/jay37749/CryptoMagic-BruteForce-Ethereum-PrivateKey-Finder-Mnemonic-Cracker.git
-
-Welcome to Crypto Magic, a powerful script designed to hunt and crack private keys from Ethereum and Polkadot mnemonics. This tool allows users to explore the fascinating world of cryptocurrency address generation and matching.
+Welcome to Crypto Searcher, a powerful script designed to hunt and crack private keys from many cryptos. This tool allows users to explore the fascinating world of cryptocurrency address generation and matching.
 ________________________________________
-*Installation*
 
-For Windows:
-To get started, install the following packages:
-
-*Copy code*
-
-pip install bip_utils
-pip install rich
-pip install argparse
-
-For Linux:
-Run the following command:
-
-*Copy code*
-
-pip3 install rich bip_utils argparse
-________________________________________
-*Usage*
-
-Ethereum:
-
-To hunt and crack private keys from Ethereum mnemonics, use the following command:
-
-*Copy code*
-
-python ethmagic.py -v <NUMBER> -f <FILE> -n <THREADS>
-
-
-Arguments:
-
-•	-h or --help : Show help message and exit
-
-•	-f or --file : Path to the Ethereum rich address file (e.g., -f eth5.txt or --file eth5.txt)
-
-•	-v or --view : Print a message after generating this number of addresses
-
-•	-n or --thread : Number of threads (CPU cores) to use for processing
-
-Example Command:
-
-*Copy code*
-
-python ethmagic.py -v 1000 -f eth5.txt -n 32
-
-Polkadot:
-
-To hunt and crack private keys from Polkadot mnemonics, run:
-
-*Copy code*
-
-python dotmagic.py -f dot1000.txt -v 1000 -n 32
-________________________________________
-*How the Code Works*
-
-This Python script is designed to generate Ethereum addresses and compare them against a list of "rich addresses" (addresses holding large amounts of Ethereum) from a text file.
-
-Key Libraries Used:
-
-•	ctypes: Interacts with low-level Windows API calls for dynamic console title setting.
-
-•	time: Provides time-related functions.
-
-•	argparse: Handles command-line arguments.
-
-•	multiprocessing: Enables parallel processing for efficiency.
-
-•	bip_utils: Manages BIP-39 and BIP-32 operations for address generation.
-
-•	rich: Beautifies console output for better readability.
-
-Core Components:
-
-1.	Command-Line Argument Parsing:
-o	The script expects three key arguments: -f, -v, and -n.
-
-2.	Reading Ethereum Addresses:
+2.	Reading crypto Addresses:
 o	The script reads addresses from the specified .txt file and stores them in a set for fast lookups.
 
 3.	Address Generation Loop:
